@@ -15,7 +15,9 @@ import { Index2Component } from './components/index2/index2.component';
 
 import { HomeNewComponent } from './components/home-new/home-new.component';
 import { AddToCartComponent } from './components/add-to-cart/add-to-cart.component';
+
 import { AdminComponent } from './components/admin/admin.component';
+
 const routes: Routes = [
   {path:'index2', component:Index2Component},
   {path:'admin', component:AdminComponent},

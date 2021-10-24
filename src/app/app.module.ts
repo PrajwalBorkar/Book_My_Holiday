@@ -26,12 +26,13 @@ import { AddToCartComponent } from './components/add-to-cart/add-to-cart.compone
 
 import { AuthService } from './components/services/auth/auth.service';
 
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { ReactiveFormsModule } from '@angular/forms';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
+
 //import { SlickCarouselModule } from 'ngx-slick-carousel';  
 @NgModule({
   declarations: [
