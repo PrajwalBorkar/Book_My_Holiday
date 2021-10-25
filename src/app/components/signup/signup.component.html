@@ -3,7 +3,9 @@
         <div class="card my-auto shadow">
             <div class="card-body px-5">
                 <div class="text-center">
-                <fa-icon [icon]="faLock" class="fa-2x"></fa-icon>     <!-- lock icon -->
+                <fa-icon [icon]="faLock" class="fa-2x">
+                    
+                </fa-icon>     <!-- lock icon -->
                 </div>
                 <div class="text-center">
                     <h2>SignUp</h2>
@@ -15,23 +17,24 @@
                     <!-- <form name="signupform" (ngSubmit)="onSubmit()">-->
                         <form name="signupform" >
                        <div class="form-group"> 
-                        <input [(ngModel)]="Name" type="text" id="Name" placeholder="Enter your Name" class="form-control" name="Name"/>
-                    </div>
-                    <div class="form-group">
-                        <input [(ngModel)]="Email" type="email" id="Email" placeholder="Enter your Email" class="form-control"  name="Email" />
-                    </div>
-                    <div class="form-group">
-                        <input [(ngModel)]="Phoneno" type="number" id="Phoneno" placeholder="Enter your Phone No" class="form-control"   name="Phoneno" />
-                    </div>
-                    <div class="form-group">
-                        <input [(ngModel)]="Password" type="password" id="Password" placeholder="Enter your Password" class="form-control" name="Password" />
-                    </div>
-                    <div class="form-group">
-                        <input [(ngModel)]="CPassword" type="text" id="CPassword" placeholder="Enter Password Again" class="form-control" name="CPassword" />
-                    </div>
-                    <input (click)="onSubmit" type="submit" class="btn btn-primary w-100" value="Signup" name="">                 
+                            <input  type="text" id="Name" placeholder="Enter your Name" class="form-control" name="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="Email" placeholder="Enter your Email" class="form-control"  name="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="Phoneno" placeholder="Enter your Phone No" class="form-control"   name="Phoneno">
+                        </div>
+                        <div class="form-group">
+                            <input  type="password" id="Password" placeholder="Enter your Password" class="form-control" name="Password" >
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="CPassword" placeholder="Enter Password Again" class="form-control" name="CPassword">
+                        </div>
+                        <input type="submit" class="btn btn-primary w-100" value="Signup" name="">                 
                 </form>
             </div>
+
             <div class="card-footer text-right">
                 <small><a routerLink="/login">Login</a></small>
             </div>

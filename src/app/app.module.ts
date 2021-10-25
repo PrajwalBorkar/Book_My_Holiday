@@ -20,7 +20,7 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { Index2Component } from './components/index2/index2.component';
-import { AdminComponent } from './admin/admin.component';
+import { AdminComponent } from './components/admin/admin.component';
 import { HomeNewComponent } from './components/home-new/home-new.component';
 import { AddToCartComponent } from './components/add-to-cart/add-to-cart.component';
 
@@ -32,7 +32,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
-
+import { faLock } from '@fortawesome/free-solid-svg-icons';
 //import { SlickCarouselModule } from 'ngx-slick-carousel';  
 @NgModule({
   declarations: [

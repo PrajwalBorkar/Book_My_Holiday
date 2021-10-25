@@ -32,37 +32,37 @@ export class SignupComponent {
     }
   }
   
-    public onSubmit()
-    {
-      if (this.Name =='') 
-      {
-      alert("Please enter your Name");
+    // public onSubmit()
+    // {
+    //   if (this.Name =='') 
+    //   {
+    //   alert("Please enter your Name");
   
-      }
-      else if (this.Email =='') 
-      {
-      alert("Please enter your Email");
-      //signupform.t2.focus();
-      }
+    //   }
+    //   else if (this.Email =='') 
+    //   {
+    //   alert("Please enter your Email");
+    //   //signupform.t2.focus();
+    //   }
       
-      else if ( (this.Phoneno.length ) != 10 )
-      {
-        alert("Phone no must of 10 digit");
-      //fdform.t3.focus();
-      }
-      else if (this.Password =='' || this.CPassword=='') 
-     {
-        alert(" Please enter your Password ");
-     //fdform.t4.focus(); 
-      }
-      else if (this.CPassword != this.Password)
-      {
-          alert("Password doesn't match");
-      //fdform.submit(); 
-      } 
-      else
-      {
-        alert("Data submitted successfully");
-      }
-      }
+    //   else if ( (this.Phoneno.length ) != 10 )
+    //   {
+    //     alert("Phone no must of 10 digit");
+    //   //fdform.t3.focus();
+    //   }
+    //   else if (this.Password =='' || this.CPassword=='') 
+    //  {
+    //     alert(" Please enter your Password ");
+    //  //fdform.t4.focus(); 
+    //   }
+    //   else if (this.CPassword != this.Password)
+    //   {
+    //       alert("Password doesn't match");
+    //   //fdform.submit(); 
+    //   } 
+    //   else
+    //   {
+    //     alert("Data submitted successfully");
+    //   }
+    //   }
 }
