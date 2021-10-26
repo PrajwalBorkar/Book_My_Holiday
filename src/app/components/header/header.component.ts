@@ -16,10 +16,17 @@ export class HeaderComponent implements OnInit {
   }
 
   userLoggedIn() {
-    return this.auth.getToken() !== null;
+    return this.auth.getTokenuser() !== null;
   }
   userLogout() : void {
     this.auth.userLogout();
   }
+  adminLoggedIn() {
+    return this.auth.getTokenadmin() !== null;
+  }
+  adminLogout() : void {
+    this.auth.adminLogout();
+  }
+  
 
 }
