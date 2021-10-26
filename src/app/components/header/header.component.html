@@ -69,10 +69,12 @@
             </div>
             
             <ul class="navbar-nav">
-            <li *ngIf="userLoggedIn()"  class="nav-item"  tooltip="Add to Cart " placement="bottom">
+              
+            <li *ngIf="this.userLoggedIn() == true && this.adminLoggedIn() == false"  class="nav-item"  tooltip="Add to Cart " placement="bottom">
               <a class="nav-link" routerLink="../add-to-cart" routerLinkActive="active">
                 <i class="fab fa-opencart"></i> Cart</a>
           </li>
+         
           
             <li *ngIf="userLoggedIn()" class="nav nav-item"  tooltip="Logout" placement="bottom">
               <a class="nav-link" (click)="userLogout()">
@@ -81,22 +83,32 @@
           </ul>
 
           <ul class="navbar-nav">
-          <a *ngIf="!userLoggedIn()" class="navbar-brand" routerLink="/index2" routerLinkActive="active"
+          <a *ngIf="!userLoggedIn() && !adminLoggedIn()" class="navbar-brand" routerLink="/index2" routerLinkActive="active"
       style="font-size: 25px;">Book My Holiday</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span></button> 
-    
-            <li *ngIf="!userLoggedIn()" class="nav nav-item" tooltip="Admin Page" placement="bottom">
-              <a class="nav-link" routerLink="/admin" routerLinkActive="active">
+            
+      
+            <li *ngIf="!adminLoggedIn() && !adminLoggedIn()" class="nav nav-item" tooltip="Admin Page" placement="bottom">
+              <a class="nav-link" routerLink="/admin-login" routerLinkActive="active">
                 <i class="fas fa-sign-in-alt" size='6px'></i> Admin</a>
             </li>
-            
-            <li *ngIf="!userLoggedIn()"class="nav nav-item" tooltip="Sign Up Page" placement="bottom">
+
+            <li *ngIf="adminLoggedIn()" class="nav nav-item" tooltip="Admin Page" placement="bottom">
+              <a class="nav-link" routerLink="/admin-home" routerLinkActive="active">
+                <i class="fas fa-sign-in-alt" size='6px'></i> Admin Home</a>
+            </li>
+
+            <li *ngIf="adminLoggedIn()" class="nav nav-item"  tooltip="Logout" placement="bottom">
+              <a class="nav-link" (click)="adminLogout()">
+                <i class="fas fa-sign-in-alt" size='6px'></i> Logout Admin</a>
+            </li>
+            <li *ngIf="!userLoggedIn() && !adminLoggedIn()"class="nav nav-item" tooltip="Sign Up Page" placement="bottom">
               <a class="nav-link" routerLink="../signup" routerLinkActive="active">
                 <i class="fas fa-user-plus"></i> Sign Up</a>
             </li>
           
-            <li *ngIf="!userLoggedIn()"class="nav nav-item" tooltip="Login Page" placement="bottom">
+            <li *ngIf="!userLoggedIn() && !adminLoggedIn()"class="nav nav-item" tooltip="Login Page" placement="bottom">
               <a class="nav-link" routerLink="../login" routerLinkActive="active">
                 <i class="fas fa-sign-in-alt" size='6px'></i> Login</a>
             </li>

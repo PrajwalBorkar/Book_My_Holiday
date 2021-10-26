@@ -16,11 +16,14 @@ import { Index2Component } from './components/index2/index2.component';
 import { HomeNewComponent } from './components/home-new/home-new.component';
 import { AddToCartComponent } from './components/add-to-cart/add-to-cart.component';
 
-import { AdminComponent } from './components/admin/admin.component';
-
+//import { AdminComponent } from './components/admin/admin.component';
+import { AdminHomeComponent } from './components/admin-home/admin-home.component';
+import { AdminLoginComponent } from './components/admin-login/admin-login.component';
 const routes: Routes = [
   {path:'index2', component:Index2Component},
-  {path:'admin', component:AdminComponent},
+  //{path:'admin', component:AdminComponent},
+  {path:'admin-login', component:AdminLoginComponent},
+  {path:'admin-home', component:AdminHomeComponent},
   {path:'signup', component :SignupComponent },
   {path:'login', component :LoginComponent },
   {path:'forgot-password', component: ForgotPasswordComponent},
